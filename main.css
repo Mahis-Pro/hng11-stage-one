@@ -1,0 +1,119 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+     background: linear-gradient(to left,#dae8e7,rgba(20, 28, 43, 0.467));
+     width: 100vw;
+     height: 100vh;
+     font-family:Roboto Slab ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: rgb(52, 57, 61);
+     gap: 50px;
+     overflow-x: hidden;
+}
+.profile{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50vw;
+}
+.details{
+     position: relative;
+     bottom: 60px;
+}
+.details h4 {
+     font-size: 25px;
+}
+.details h6{
+     font-size: 15px;
+}
+#dp{
+     object-fit: cover;
+     border-radius: 50%;
+     position: relative;
+     bottom: 80px;
+     border: 2px dotted #eeee;
+}
+.info{
+     text-align: center;
+     background-color: #eeeeee38;
+     padding:20px ;
+     border-radius: 10px;
+}
+.user{
+     color: rgb(19, 41, 38);
+     font-size: 10px !important;
+     font-family: cursive;
+}
+#timeInfo{
+     font-family: Roboto Slab;
+     font-weight: 700;
+}
+.socials a {
+     font-size: 50px;
+}
+i{
+     color: grey;
+     padding: 5px;
+}
+
+/* section two style */
+#goals{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 400px;
+     gap: 50px;
+}
+#goals h1{
+  font-size: 30px;
+}
+#goals p:not(:first-child) {
+     display: none;
+ }
+.pagination{
+     justify-self: flex-end;
+     align-self: flex-end;
+     margin-right: 20px;
+}
+button{
+     background-color:#eeeeeeb1 ;
+     border: none;
+     border-radius: 10px;
+
+     font-weight: 100;
+     font-size: 15px;
+     padding: 1px 10px 1px 10px;
+}
+
+
+@media (min-width:200px) and (max-width:851px) {
+     body{
+          flex-direction: column;
+          height: auto !important;
+          align-items: center;
+          overflow-x: hidden;
+     }
+     .profile{
+          margin-top: 100px;
+          width: 90vw;
+     }
+     #goals{
+          justify-content: center;
+          width: 100vw;
+          overflow-x: hidden;
+          align-items: center ;
+          margin-bottom: 100px;
+          
+     }
+     #goals p{
+          margin-left: 10px;
+          margin-right: 10px;
+     }
+     
+}
