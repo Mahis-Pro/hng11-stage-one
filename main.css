@@ -90,6 +90,10 @@ button{
      font-size: 15px;
      padding: 1px 10px 1px 10px;
 }
+.credits a{
+      font-size: 11px;
+      margin-right: 10px;
+}
 
 
 @media (min-width:200px) and (max-width:851px) {

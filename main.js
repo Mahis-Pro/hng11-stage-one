@@ -1,11 +1,13 @@
 function updateTime() {    
-     const currentTime = new Date();
+     const now= new Date();
+     const formattedTime = `${now.getHours()}:${now.getUTCMinutes()}:${now.getUTCSeconds()}`;
+     const formattedDate = now.toLocaleDateString("en-GB");
 
-     const timeZoneOffset = currentTime.getTimezoneOffset();
-     const timeZoneOffsetHours = timeZoneOffset / 60;
-
-     document.getElementById("timeInfo").textContent = `UTC${timeZoneOffsetHours >= 0 ? '+' : ''}${timeZoneOffsetHours} | ${currentTime.toLocaleTimeString()}`;
+      document.getElementById("timeInfo").textContent =new Date().toString().match(/([A-Z]+[\+-][0-9]+)/)[1] + "  ||  "  + Intl.DateTimeFormat().resolvedOptions().timeZone + "  ||  " +  formattedTime ;
+      document.getElementById("day").textContent= formattedDate;
  }
+
+
  setInterval(updateTime, 1000);
 
 
